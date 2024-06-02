@@ -1,2 +1,24 @@
-# Neuron_frontend
-软件工程课程设计-Neuron学科/专业事项数据采集平台前端
+# vue_0
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
