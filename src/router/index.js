@@ -12,7 +12,7 @@ const router = createRouter({
             meta:{
                 // 页面标题
                 title: '问卷调查入口'
-            },
+            }
             
         }
     ]
