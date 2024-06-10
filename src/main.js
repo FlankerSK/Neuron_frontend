@@ -1,18 +1,22 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from "@/router";
+import router from './router/router'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import * as ElementPlusIconsVue from '@element-plus/icons-vue' // 引入所有图标
+import { createPinia } from 'pinia' // 引入pinia,用于状态管理
+import 'element-plus/theme-chalk/dark/css-vars.css' // 引入 element 黑暗样式
+// import  '../mock/user'
 
-// import { createPinia } from "pinia";
+const app = createApp(App)
+const pinia = createPinia()
 
-// import "echarts"
-// import ECharts from "vue-echarts";
-// import 'element-plus/theme-chalk/dark/css-vars.css';
-
-
-const app=createApp(App)
-
-// app.use(createPinia())
+// 注册 Element Plus 图标
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+  app.component(key, component)
+}
 app.use(router)
-
-
+app.use(ElementPlus)
+app.use(pinia)
 app.mount('#app')
+

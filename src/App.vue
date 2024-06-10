@@ -1,14 +1,14 @@
-<script setup>
-
-</script>
-
 <template>
-  <div>
-    <router-view/>
-  </div>
-
+  <router-view></router-view>
 </template>
 
-<style scoped>
-
+<script setup></script>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
 </style>
